@@ -1,0 +1,62 @@
+/*
+	Author: William Watts
+	Date: 9/25/2026
+*/
+
+body, header, nav, main, footer, h1, div, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+h1 {
+	font-family: Verdana, sans-serif
+	font-size: 14pt;
+	font-color: #FF1493;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: Arial, sans-serif
+	font-size: 24pt;
+	font-color: #FF69B4;
+	font-weight: normal;
+}
+
+hr {
+	height: 12px;
+	background-color: #FF69B4
+}
+
+img cp1 {
+	width: 210px;
+	height: 210px
+	float: left;
+	margin: 0 0 0 15px;
+}
+
+img cp2 {
+	width: 210px;
+	height: 210px
+	float: right;
+	margin: 0 0 0 15px;
+}
+
+main {
+	background-color: #FFC0CB;
+	color: #333;
+	max width: 1000px;
+	font style: Times-New-Roman, Serif
+}
+
+body {
+	font-size: 12pt;
+}
+
+ol {
+	margin-left: 350px;
+}
+
+footer {
+	color: #000;
+}
