@@ -5,7 +5,7 @@
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside{
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -16,7 +16,7 @@ body{
 	background-color: #000;
 }
 
-img{
+img, video{
 	max-width: 100%;
 	display: block;
 }
@@ -86,6 +86,10 @@ main{
 	padding: 2%;
 	font-size: 1.15em;
 	font-family: "Roboto Slab", serif;
+}
+
+video{
+	margin: 0 auto 4%;
 }
 
 .mobile h3{
@@ -179,8 +183,44 @@ iframe{
 }
 
 #gradient{
-	background: linear-gradient(#0f6, #0cf);
+	background: linear-gradient(rgb(0, 0, 255), rgb(0, 255, 0));
 	padding: 2% 2%;
+}
+
+#form{
+	margin-top: 2%;
+	background: linear-gradient(rgb(0, 255, 0), rgb(255, 0, 0));
+	padding: 2%;
+}
+
+#form h2{
+	background: linear-gradient(rgb(0, 255, 0), rgb(255, 0, 0));
+	text-align: center;
+}
+
+/* Style rules for form elements */
+fieldset, input, select, textarea{
+	margin-bottom: 2%;
+}
+
+fieldset legend{
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+label{
+	display: block;
+	padding-top: 3%;
+}
+
+form #submit{
+	margin: 0 auto;
+	border: none;
+	display: block;
+	padding: 2%;
+	background-color: #b3b3b3;
+	font-size: 1em;
+	border-radius: 10px;
 }
 
 /* Style rules for footer content */
@@ -266,6 +306,16 @@ footer p a{
 		Width: 600px;
 		height: 450px;
 	}
+
+	tr:nth-child(odd){
+		background-color: #ccc;
+	}
+
+	form{
+		background: linear-gradient(rgb(0, 255, 0), rgb(255, 0, 0));
+		width: 70%;
+		margin: 0 auto;
+	}
 }
 
 /* Media Query for Desktop Viewport */
@@ -324,6 +374,22 @@ footer p a{
 	.frame:hover{
 		opacity: 1;
 		box-shadow: 8px 8px 10px #3d3d3d;
+	}
+
+	form{
+		background: linear-gradient(rgb(0, 255, 0), rgb(255, 0, 0));
+		width: auto;
+	}
+
+	.form-grid{
+		background: linear-gradient(rgb(0, 255, 0), rgb(255, 0, 0));
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+
+	.btn{
+		grid-column: 1/span3;
 	}
 }
 
