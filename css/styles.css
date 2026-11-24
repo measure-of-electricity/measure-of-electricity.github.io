@@ -34,34 +34,6 @@ header img{
 	height: 190px;
 }
 
-/* Style rules for navigation area */
-nav{
-	padding: 1%;
-	margin-bottom: 1%;
-}
-
-nav ul{
-	list-style-type: none;
-	text-align: center;
-}
-
-nav li{
-	font-size: 1.5em;
-	font-family: "Francois One", sans-serif;
-	border-top: 1px solid #fff;
-}
-
-nav li:first-child{
-	border-top: none;
-}
-
-nav li a{
-	display: block;
-	color: #fff;
-	padding: 0.5em 1em;
-	text-decoration: none;
-}
-
 .text-link{
 	display: inline-block;
 }
@@ -70,12 +42,32 @@ nav li a{
 	display: block;
 }
 
+/* Style rules for mobile/hamburger navigation area */
+.mobile-nav a {
+	color: #fff;
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    z-index: 1000;
+    color: #fff;
+}
+
 /* Show mobile class, hide tablet-desktop */
 .mobile{
 	display: block;
-} 
+}
 
-#tablet-desktop{
+.tablet-desktop, #menu-links{
 	display: none;
 }
 
@@ -243,7 +235,7 @@ footer p a{
 		display: block;
 	}
 
-	.mobile{
+	.mobile, .mobile-nav{
 		display: none;
 	}
 
@@ -252,18 +244,29 @@ footer p a{
 		padding-bottom: 2%;
 	}
 
+	/* Style rules for navigation area */
+	nav{
+		padding: 1%;
+		margin-bottom: 1%;
+	}
+
+	nav ul{
+		list-style-type: none;
+		text-align: center;
+	}
+
 	nav li{
-		border-top: none;
+		font-size: 1.5em;
+		font-family: "Francois One", sans-serif;
 		display: inline-block;
 		border-right: 1px solid #fff;
 	}
 
-	nav li:last-child{
-		border-right: none;
-	}
-
 	nav li a{
+		display: block;
+		color: #fff;
 		padding: 0.1em 0.75em;
+		text-decoration: none;
 	}
 
 	main ul{
@@ -348,6 +351,7 @@ footer p a{
 	nav li a:hover{
 		color: #000;
 		background-color: #fff;
+		transform: scale(1.3);
 	}
 
 	main{
@@ -374,6 +378,12 @@ footer p a{
 	.frame:hover{
 		opacity: 1;
 		box-shadow: 8px 8px 10px #3d3d3d;
+		transform: translateY(10px);
+	}
+
+	.offer:hover{
+		transform: scale(1.25);
+		cursor: pointer;
 	}
 
 	form{
