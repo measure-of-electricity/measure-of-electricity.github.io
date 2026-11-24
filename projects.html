@@ -12,13 +12,26 @@
 	</head>
 	<body>
 		<div id="container">
+			<!-- Mobile Nav -->
+			<nav class="mobile-nav">
+				<div id="menu-links">
+					<a href="index.html">Home</a>
+					<a href="projects.html">My Projects</a>
+					<a href="about.html">About Me</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<a class="menu-icon" onclick="hamburger()">
+					<div>&#9776;</div>
+				</a>
+			</nav>
+
 			<!-- Use header area for website name or logo -->
-			<header>
-				<a href="index.html"><img src="images/william.webp" alt="William's Bitmoji"></a>
+			<header id="ffc-logo">
+				<a href="index.html"><img src="images/william.webp" alt="William"></a>
 			</header>
 			
 			<!-- Use nav area to add hyperlinks to other pages -->
-			<nav>
+			<nav class="tablet-desktop">
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="projects.html">My Projects</a></li>
@@ -52,6 +65,9 @@
 						alt="Forward Fitness Club Logo"></a>
 						<a href="projects/fitnessch9/index.html" target="_blank" rel="noopener noreferrer" class="text-link frame">
 						<img src="projects/fitnessch9/images/forward-fitness-logo.png"
+						alt="Forward Fitness Club Logo"></a>
+						<a href="projects/fitnessch10/index.html" target="_blank" rel="noopener noreferrer" class="text-link frame">
+						<img src="projects/fitnessch10/images/forward-fitness-logo.png"
 						alt="Forward Fitness Club Logo"></a>
 					</div>
 					
@@ -104,5 +120,6 @@
 				<p><a href="mailto:william.watts@stu.cvccworks.edu">william.watts@stu.cvccworks.edu</a></p>
 			</footer>
 		</div>
+		<script src="scripts/script.js"></script>
 	</body>
 </html>

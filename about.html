@@ -12,13 +12,26 @@
 	</head>
 	<body>
 		<div id="container">
+			<!-- Mobile Nav -->
+			<nav class="mobile-nav">
+				<div id="menu-links">
+					<a href="index.html">Home</a>
+					<a href="projects.html">My Projects</a>
+					<a href="about.html">About Me</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<a class="menu-icon" onclick="hamburger()">
+					<div>&#9776;</div>
+				</a>
+			</nav>
+
 			<!-- Use header area for website name or logo -->
-			<header>
+			<header id="ffc-logo">
 				<a href="index.html"><img src="images/william.webp" alt="William"></a>
 			</header>
 			
 			<!-- Use nav area to add hyperlinks to other pages -->
-			<nav>
+			<nav class="tablet-desktop">
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="projects.html">My Projects</a></li>
@@ -62,7 +75,7 @@
 						<source src="media/ffc_audio.ogg" type="audio/ogg">
 						<p>Your browser does not support the audio element.</p>
 					</audio>
-				</div> 
+				</div>
 				
 				I don't have anything for this -->
 			</main>
@@ -73,5 +86,6 @@
 				<p><a href="mailto:william.watts@stu.cvccworks.edu">william.watts@stu.cvccworks.edu</a></p>
 			</footer>
 		</div>
+		<script src="scripts/script.js"></script>
 	</body>
 </html>

@@ -12,13 +12,26 @@
 	</head>
 	<body>
 		<div id="container">
+			<!-- Mobile Nav -->
+			<nav class="mobile-nav">
+				<div id="menu-links">
+					<a href="index.html">Home</a>
+					<a href="projects.html">My Projects</a>
+					<a href="about.html">About Me</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<a class="menu-icon" onclick="hamburger()">
+					<div>&#9776;</div>
+				</a>
+			</nav>
+
 			<!-- Use header area for website name or logo -->
-			<header>
+			<header id="ffc-logo">
 				<img src="images/william.webp" alt="William">
 			</header>
 			
 			<!-- Use nav area to add hyperlinks to other pages -->
-			<nav>
+			<nav class="tablet-desktop">
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="projects.html">My Projects</a></li>
@@ -33,6 +46,8 @@
 					<p>Hi there, my name is William and welcome to my very first site that's all about me, and also where you'll simply find out who I am.</p>
 					<h6>I'm not very good at writing intros. :(</h6>
 				</div>
+
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ItvYftLNKLI?si=DxerQbMoMkT4_qu5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 				<!-- <div id="music-sample">
 						<audio controls>
@@ -51,5 +66,6 @@
 				<p><a href="mailto:william.watts@stu.cvccworks.edu">william.watts@stu.cvccworks.edu</a></p>
 			</footer>
 		</div>
+		<script src="scripts/script.js"></script>
 	</body>
 </html>
